@@ -1,0 +1,90 @@
+Manmit Singh
+ms785
+
+Copy/Paste from running PercolationStats with these grid sizes: 
+grid sizes of 100, 200, 400, 800, 1600, and 3200
+and using 20 trials
+
+PercolationDFSFast
+------------------------------------
+simulation data for 20 trials
+grid	mean	stddev	total time
+100	0.593	0.014	0.109
+200	0.591	0.010	0.132
+400	0.590	0.006	0.812
+800	0.594	0.004	4.326
+<Stack Overflow error>
+-------------------------------------
+
+PercolationBFS
+-------------------------------------
+simulation data for 20 trials
+grid	mean	stddev	total time
+100	0.593	0.014	0.108
+200	0.591	0.010	0.151
+400	0.590	0.006	0.778
+800	0.594	0.004	4.216
+1600	0.592	0.002	24.958
+3200	0.593	0.001	152.577
+-------------------------------------
+
+PercolationUF with QuickUWPC
+--------------------------------------
+simulation data for 20 trials
+grid	mean	stddev	total time
+100	0.593	0.014	0.044
+200	0.591	0.010	0.074
+400	0.590	0.006	0.380
+800	0.594	0.004	2.143
+1600	0.592	0.002	12.236
+3200	0.593	0.001	64.256
+---------------------------------------
+
+Answer these questions for PercolateUF with a QuickUWPC union-find object
+
+How does doubling the grid size affect running time (keeping # trials fixed)
+-------------------------------------------------------------------------------------------------------------------------
+Doubling the grid size increases the runtime of the program. This is because more cells have to be iterated through
+by each of the three programs. However,there is a discernible difference between the performances of the 3 approaches. 
+Depth-first search is the slowest and overflows before reaching a 3200 item grid. Breadth-first search is the 
+second-best approach but still takes very long. UF, however, takes the least time.  
+-------------------------------------------------------------------------------------------------------------------------
+How does doubling the number of trials affect running time.
+------------------------------------------
+simulation data for 40 trials
+grid	mean	stddev	total time
+100	0.594	0.015	0.124
+200	0.591	0.009	0.213
+400	0.591	0.005	1.316
+800	0.593	0.004	8.073
+<Stack OverFlow>
+----------------------------------------
+simulation data for 40 trials
+grid	mean	stddev	total time
+100	0.594	0.015	0.166
+200	0.591	0.009	0.375
+400	0.591	0.005	1.514
+800	0.593	0.004	9.851
+1600	0.593	0.002	51.419
+3200	0.593	0.001	263.006
+----------------------------------------
+simulation data for 40 trials --- UF
+grid	mean	stddev	total time
+100	0.594	0.015	0.067
+200	0.591	0.009	0.131
+400	0.591	0.005	0.724
+800	0.593	0.004	4.120
+1600	0.593	0.002	23.342
+-----------------------------------------
+
+When the number of trials, the run-time also increases proportionally. This is because more simulations are run,
+which require more time to process. 
+
+Estimate the largest grid size you can run in 24 hours with 20 trials. Explain your reasoning.
+
+As per Microsoft excel, the polynomial curve of best-fit for the data provided above is described by the equation - 
+						y = 6E-10x3 + 5E-06x2 - 0.0017x + 0.2067
+Where x is the grid size and y is the time taken to run. Solving this equation for y equal to 86400 seconds (1 week), we get
+x approximately equal to 3.4 million.
+
+
