@@ -1,0 +1,39 @@
+This is analysis.txt
+Writer - Manmit Singh
+NetID: ms785
+
+Copy/paste the output of your simulation when using planets.txt,
+running the simulation for 1,000,000 (one  million) seconds, and
+with a time-step/dt value of 25,000
+
+5
+2.50e+11
+ 1.4642e+11  3.0333e+10 -6.0385e+03  2.9196e+04  5.9740e+24    earth.gif
+ 2.2653e+11  2.4654e+10 -2.6137e+03  2.3962e+04  6.4190e+23     mars.gif
+ 3.7730e+10  4.3365e+10 -3.6249e+04  3.1843e+04  3.3020e+23  mercury.gif
+ 2.8151e+04  3.2066e+03  5.2968e-02  9.0936e-03  1.9890e+30      sun.gif
+ 1.0215e+11  3.5220e+10 -1.1426e+04  3.3133e+04  4.8690e+24    venus.gif
+
+Copy/paste the output of your simulation when using planets.txt,
+running the simulation for 2,000,000 (two  million) seconds, and
+with a time-step/dt value of 25,000
+
+5
+2.50e+11
+ 1.4925e+11 -1.0467e+10  2.0872e+03  2.9723e+04  5.9740e+24    earth.gif
+-1.1055e+11 -1.9868e+11  2.1060e+04 -1.1827e+04  6.4190e+23     mars.gif
+-1.1708e+10 -5.7384e+10  4.6276e+04 -9.9541e+03  3.3020e+23  mercury.gif
+ 2.1709e+05  3.0029e+07  4.5087e-02  5.1823e-02  1.9890e+30      sun.gif
+ 6.9283e+10  8.2658e+10 -2.6894e+04  2.2585e+04  4.8690e+24    venus.gif
+
+Run the simulation for a billion seconds (10^9) and a time-step/dt
+of a million. You should see behavior inconsistent with what is
+expected for celestial bodies. This is due to large values of dt
+when approximating forces. Write down below what you see during
+this simulation.
+
+During the three simulations described above, I observed a consistent behaviour in the system of planets. This behaviour also 
+closely resembled that of our solar system, in which the angular velocity of planets decreases as they move away from the centre.
+Also, all five planets in my simulation maintained elliptical orbits, the size of which remained unchanged throughout the course
+of the simulation.  
+
