@@ -1,5 +1,5 @@
 # CS201: Data Structures and Algorithms
-Code from assignments and projects related to the introductory data structures and algorithms course at Duke University.\
+Code from assignments and projects related to the introductory data structures and algorithms course at Duke University.
 
 Course Description -
 
